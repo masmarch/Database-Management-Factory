@@ -1,0 +1,19 @@
+﻿<Window x:Class="Datafactory.add_detail_job"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Datafactory"
+        mc:Ignorable="d"
+        Title="เพิ่มรายละเอียดใบรับงาน" Height="600" Width="800" Background="LightGray" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dataG" HorizontalAlignment="Left" Height="400" Margin="38,87,0,0" VerticalAlignment="Top" Width="722"/>
+        <Button Content="เสร็จสิ้น" HorizontalAlignment="Left" Height="40" Margin="630,508,0,0" VerticalAlignment="Top" Width="118" Background="White" FontFamily="JasmineUPC" FontSize="28" Click="Button_Click"/>
+        <Label x:Name="txtadd" Content="Label" HorizontalAlignment="Left" Height="36" Margin="118,44,0,0" VerticalAlignment="Top" Width="144" FontFamily="JasmineUPC" FontSize="25"/>
+        <Label x:Name="head" Content="รหัสงาน:" HorizontalAlignment="Left" Height="36" Margin="38,46,0,0" VerticalAlignment="Top" Width="75" FontFamily="JasmineUPC" FontSize="25"/>
+        <Button x:Name="find" Content="ค้นหา" HorizontalAlignment="Left" Height="28" Margin="267,51,0,0" VerticalAlignment="Top" Width="51" Background="White" FontFamily="JasmineUPC" FontSize="15" Click="find_Click"/>
+        <Label x:Name="head_Copy" Content="ส่วนเพิ่มรายละเอียดใบรับงาน" HorizontalAlignment="Left" Height="36" Margin="536,46,0,0" VerticalAlignment="Top" Width="224" FontFamily="JasmineUPC" FontSize="25" RenderTransformOrigin="0.587,0.509"/>
+
+    </Grid>
+</Window>
+

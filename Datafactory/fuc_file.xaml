@@ -1,0 +1,51 @@
+﻿<Window x:Class="Datafactory.fuc_file"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Datafactory"
+        mc:Ignorable="d"
+         Title="โรงงานโพลิยูรีเทรน" Height="800" Width="1400" Background="#FFC4F1EC" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Frame x:Name="Rframe" Content="Frame" Height="745" Margin="478,25,-4.4,0" VerticalAlignment="Top" Width="920" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="LightGray" HorizontalAlignment="Left" Height="720" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="478"/>
+        <Button x:Name="customer" Content="ลูกค้า" HorizontalAlignment="Left" Height="50" Margin="198,-1,0,0" VerticalAlignment="Top" Width="200" Click="customer_Click" />
+        <Button x:Name="partner" Content="บริษัทสั่งทำ" HorizontalAlignment="Left" Height="50" Margin="798,-1,0,0" VerticalAlignment="Top" Width="200" Click="partner_Click" />
+        <Button x:Name="file" Content="เอกสาร" HorizontalAlignment="Left" Height="50" Margin="398,-1,0,0" VerticalAlignment="Top" Width="200"  />
+        <Button x:Name="vendor" Content="บริษัทสั่งของ" HorizontalAlignment="Left" Height="50" Margin="598,-1,0,0" VerticalAlignment="Top" Width="200" Click="vendor_Click" />
+        <Button x:Name="materal" Content="วัตถุดิบ" HorizontalAlignment="Left" Height="50" Margin="998,-1,-904.4,0" VerticalAlignment="Top" Width="200" Click="materal_Click" />
+        <Button x:Name="product" Content="สินค้า" HorizontalAlignment="Left" Height="50" Margin="1198,-1,-0.4,0" VerticalAlignment="Top" Width="196" Click="product_Click" />
+        <Button x:Name="employee" Content="พนักงาน" HorizontalAlignment="Left" Height="50" Margin="0,-1,0,0" VerticalAlignment="Top" Width="198" Click="employee_Click" />
+        <Label Content="เอกสาร" HorizontalAlignment="Left" Height="39" Margin="18,51,0,0" VerticalAlignment="Top" Width="192" FontSize="36" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Label Content="ค้นหา:" HorizontalAlignment="Left" Height="41" Margin="35,93,0,0" VerticalAlignment="Top" Width="76" FontSize="30" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="fileQ1" Content="ค้นหาด้วยรหัสเอกสาร" HorizontalAlignment="Left" Height="31" Margin="198,126,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileQ1_Click" />
+        <Button x:Name="fileQ2" Content="ค้นหาด้วยรหัสงาน" HorizontalAlignment="Left" Height="31" Margin="198,161,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileQ2_Click" />
+        <Button x:Name="addJ" Content="เพิ่มงานใบรับงาน" HorizontalAlignment="Left" Height="31" Margin="27,471,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="addJ_Click" />
+        <Button x:Name="editJ" Content="แก้ไขใบรับงาน" HorizontalAlignment="Left" Height="31" Margin="261,471,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="editJ_Click"  />
+        <Label Content="ใบเสนอราคางาน:" HorizontalAlignment="Left" Height="31" Margin="45,126,0,0" VerticalAlignment="Top" Width="148" FontSize="24" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="fileR1" Content="ค้นหาด้วยรหัสเอกสาร" HorizontalAlignment="Left" Height="31" Margin="198,197,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileR1_Click" />
+        <Button x:Name="fileR2" Content="ค้นหาด้วยรหัสงาน" HorizontalAlignment="Left" Height="31" Margin="198,232,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileR2_Click" />
+        <Label Content="ใบเสร็จ:" HorizontalAlignment="Left" Height="31" Margin="121,200,0,0" VerticalAlignment="Top" Width="72" FontSize="24" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="fileV" Content="ค้นหาด้วยรหัสเอกสาร" HorizontalAlignment="Left" Height="31" Margin="198,269,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileV_Click" />
+        <Label Content="ใบสั่งซื้อวัตถุดิบ:" HorizontalAlignment="Left" Height="31" Margin="59,270,0,0" VerticalAlignment="Top" Width="134" FontSize="24" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="fileP" Content="ค้นหาด้วยรหัสเอกสาร" HorizontalAlignment="Left" Height="31" Margin="198,306,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileP_Click" />
+        <Label Content="ใบสั่งซื้อแม่พิมพ์:" HorizontalAlignment="Left" Height="31" Margin="53,306,0,0" VerticalAlignment="Top" Width="140" FontSize="24" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="addW" Content="เพิ่มใบสั่งงาน" HorizontalAlignment="Left" Height="31" Margin="27,563,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="addW_Click" />
+        <Button x:Name="editW" Content="แก้ไขใบสั่งงาน" HorizontalAlignment="Left" Height="31" Margin="261,563,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="editW_Click"  />
+        <Button x:Name="addQ" Content="เพิ่มใบเสนอราคา" HorizontalAlignment="Left" Height="31" Margin="27,515,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="addQ_Click" />
+        <Button x:Name="editQ" Content="แก้ไขใบเสนอราคา" HorizontalAlignment="Left" Height="31" Margin="261,515,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="editQ_Click"  />
+        <Label Content="สั่งซื้อ/สั่งงาน:" HorizontalAlignment="Left" Height="41" Margin="35,426,0,0" VerticalAlignment="Top" Width="158" FontSize="30" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="fileJ" Content="ค้นหาด้วยรหัสเอกสาร" HorizontalAlignment="Left" Height="31" Margin="198,342,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileJ_Click" />
+        <Label Content="ใบรับงาน:" HorizontalAlignment="Left" Height="31" Margin="106,342,0,0" VerticalAlignment="Top" Width="88" FontSize="24" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="fileW" Content="ค้นหาด้วยรหัสเอกสาร" HorizontalAlignment="Left" Height="31" Margin="198,378,0,0" VerticalAlignment="Top" Width="251" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="fileW_Click" />
+        <Label Content="ใบสั่งงาน:" HorizontalAlignment="Left" Height="31" Margin="106,378,0,0" VerticalAlignment="Top" Width="86" FontSize="24" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="addR" Content="เพิ่มใบเสร็จ" HorizontalAlignment="Left" Height="31" Margin="27,609,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="addR_Click" />
+        <Button x:Name="editR" Content="แก้ไขใบเสร็จ" HorizontalAlignment="Left" Height="31" Margin="261,609,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="editR_Click"  />
+        <Label Content="---------------------------------------------------------------------" HorizontalAlignment="Left" Height="35" Margin="0,401,0,0" VerticalAlignment="Top" Width="478" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="addV" Content="เพิ่มใบสั่งซื้อวัตถุดิบ" HorizontalAlignment="Left" Height="31" Margin="27,658,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="addV_Click" />
+        <Button x:Name="editV" Content="แก้ไขใบสั่งซื้อวัตถุดิบ" HorizontalAlignment="Left" Height="31" Margin="261,658,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="editV_Click"  />
+        <Button x:Name="addP" Content="เพิ่มใบสั่งซื้อแม่พิมพ์" HorizontalAlignment="Left" Height="31" Margin="27,704,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="addP_Click" />
+        <Button x:Name="editP" Content="แก้ไขใบสั่งทำแม่พิมพ์" HorizontalAlignment="Left" Height="31" Margin="261,704,0,0" VerticalAlignment="Top" Width="188" FontFamily="JasmineUPC" FontSize="24" Background="#FFFDFDFD" Click="editP_Click"  />
+
+    </Grid>
+</Window>

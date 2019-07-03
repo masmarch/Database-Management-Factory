@@ -1,0 +1,30 @@
+﻿<Page x:Class="Datafactory.add_wmateral"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Datafactory"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="920"
+      Title="add_order_materal" Width="920" Height="720" Background="LightGray" Loaded="Page_Loaded">
+
+    <Grid>
+        <Label x:Name="head" Content="เพิ่มใบสั่งซื้อวัตถุดิบ" HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" VerticalAlignment="Top" Width="243" FontSize="36" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Label Content="รหัสใบสั่งวัตถุดิบ:" HorizontalAlignment="Left" Height="35" Margin="162,107,0,0" VerticalAlignment="Top" Width="155" FontFamily="JasmineUPC" FontSize="28" RenderTransformOrigin="-0.756,-0.734"/>
+        <TextBox x:Name="ormid" HorizontalAlignment="Left" Height="35" Margin="317,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" FontFamily="JasmineUPC" FontSize="24"/>
+        <Label Content="วันสั่งวัตถุดิบ:" HorizontalAlignment="Left" Height="35" Margin="162,169,0,0" VerticalAlignment="Top" Width="119" FontFamily="JasmineUPC" FontSize="28"/>
+        <Label Content="วันรับของ:" HorizontalAlignment="Left" Height="35" Margin="162,231,0,0" VerticalAlignment="Top" Width="105" FontFamily="JasmineUPC" FontSize="28"/>
+        <Button x:Name="done" Content="เสร็จสิ้น" HorizontalAlignment="Left" Height="42" Margin="706,632,0,0" VerticalAlignment="Top" Width="106"  FontFamily="JasmineUPC" FontSize="22" Background="White" RenderTransformOrigin="1.496,0.519" Click="done_Click" />
+        <DatePicker x:Name="ormdate" HorizontalAlignment="Left" Height="35" Margin="317,169,0,0" VerticalAlignment="Top" Width="261"/>
+        <DatePicker x:Name="ormdateline" HorizontalAlignment="Left" Height="35" Margin="317,231,0,0" VerticalAlignment="Top" Width="261"/>
+        <Label Content="วันจ่าย:" HorizontalAlignment="Left" Height="35" Margin="162,293,0,0" VerticalAlignment="Top" Width="119" FontFamily="JasmineUPC" FontSize="28"/>
+        <Label Content="รหัสพนักงาน:" HorizontalAlignment="Left" Height="35" Margin="162,446,0,0" VerticalAlignment="Top" Width="133" FontFamily="JasmineUPC" FontSize="28"/>
+        <Label Content="รหัสบริษัทสั่งของ:" HorizontalAlignment="Left" Height="35" Margin="162,375,0,0" VerticalAlignment="Top" Width="155" FontFamily="JasmineUPC" FontSize="28"/>
+        <DatePicker x:Name="ormpayday" HorizontalAlignment="Left" Height="35" Margin="317,302,0,0" VerticalAlignment="Top" Width="261"/>
+        <TextBox x:Name="empid" HorizontalAlignment="Left" Height="35" Margin="317,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" FontFamily="JasmineUPC" FontSize="24"/>
+        <ComboBox x:Name="vid" HorizontalAlignment="Left" Height="35" Margin="317,375,0,0" VerticalAlignment="Top" Width="261"/>
+        <Label Content="ตัวอย่างรหัส: พXX" HorizontalAlignment="Left" Margin="585,110,0,0" VerticalAlignment="Top" FontFamily="JasmineUPC" FontSize="24" Width="151"/>
+
+
+    </Grid>
+</Page>

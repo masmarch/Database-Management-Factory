@@ -1,0 +1,22 @@
+﻿<Window x:Class="Datafactory.edit_job"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Datafactory"
+         mc:Ignorable="d"
+        Title="แก้ไขใบรับงาน" Height="600" Width="800" Background="LightGray" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dataG" HorizontalAlignment="Left" Height="185" Margin="38,87,0,0" VerticalAlignment="Top" Width="722" FontFamily="JasmineUPC" FontSize="24"/>
+        <Button Content="เสร็จสิ้น" HorizontalAlignment="Left" Height="40" Margin="630,508,0,0" VerticalAlignment="Top" Width="118"  Background="White" FontFamily="JasmineUPC" FontSize="28" Click="Button_Click" />
+        <Label x:Name="head_Copy" Content="แก้ไขใบรับงาน" HorizontalAlignment="Left" Height="36" Margin="38,10,0,0" VerticalAlignment="Top" Width="189" FontFamily="JasmineUPC" FontSize="28"/>
+        <DataGrid x:Name="dataG1" HorizontalAlignment="Left" Height="185" Margin="38,300,0,0" VerticalAlignment="Top" Width="722" FontFamily="JasmineUPC" FontSize="24"/>
+        <Label x:Name="head_Copy1" Content="แก้ไขข้อมูลใบรับงาน" HorizontalAlignment="Left" Height="36" Margin="602,59,0,0" VerticalAlignment="Top" Width="158" FontFamily="JasmineUPC" FontSize="25" FontStyle="Italic"/>
+        <Label x:Name="head_Copy2" Content="แก้ไขรายละเอียดใบรับงาน" HorizontalAlignment="Left" Height="36" Margin="564,271,0,0" VerticalAlignment="Top" Width="196" FontFamily="JasmineUPC" FontSize="25" FontStyle="Italic"/>
+        <ComboBox x:Name="qid" HorizontalAlignment="Left" Height="28" Margin="38,54,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="success" Content="ยืนยัน" HorizontalAlignment="Left" Height="28" Margin="179,54,0,0" VerticalAlignment="Top" Width="67"  Background="White" FontFamily="JasmineUPC" FontSize="28" Click="success_Click" />
+
+
+
+    </Grid>
+</Window>

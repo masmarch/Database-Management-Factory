@@ -1,0 +1,23 @@
+﻿<Window x:Class="Datafactory.edit_ven"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Datafactory"
+        mc:Ignorable="d"
+         
+        Title="แก้ไขข้อมูลพนักงาน" Height="600" Width="800" Background="LightGray" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="head" Content="แก้ไขข้อมูลบริษัทสั่งวัตถุดิบ" HorizontalAlignment="Left" Height="54" Margin="10,10,0,0" VerticalAlignment="Top" Width="321" FontSize="36" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <TextBox x:Name="userid"  HorizontalAlignment="Left" Height="31" Margin="348,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="291" FontFamily="JasmineUPC" FontSize="24" Text="ใส่รหัสบริษัทสั่งวัตถุดิบ" FontStyle="Italic" Background="White" Foreground="#FFA29090" BorderBrush="#FF0B0F1D"/>
+        <Label Content="ชื่อบริษัทสั่งวัตถุดิบ:" HorizontalAlignment="Left" Height="35" Margin="92,125,0,0" VerticalAlignment="Top" Width="174" FontFamily="JasmineUPC" FontSize="28"/>
+        <TextBox x:Name="cname" HorizontalAlignment="Left" Height="35" Margin="103,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" FontFamily="JasmineUPC" FontSize="24"/>
+        <Label Content="ที่อยู่:" HorizontalAlignment="Left" Height="35" Margin="93,227,0,0" VerticalAlignment="Top" Width="59" FontFamily="JasmineUPC" FontSize="28"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="35" Margin="103,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="575" FontFamily="JasmineUPC" FontSize="24"/>
+        <Label Content="เบอร์ติดต่อ:" HorizontalAlignment="Left" Height="35" Margin="103,337,0,0" VerticalAlignment="Top" Width="108" FontFamily="JasmineUPC" FontSize="28"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="35" Margin="103,377,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" FontFamily="JasmineUPC" FontSize="24"/>
+        <Button x:Name="done" Content="เสร็จสิ้น" HorizontalAlignment="Left" Height="42" Margin="630,491,0,0" VerticalAlignment="Top" Width="106"  FontFamily="JasmineUPC" FontSize="28" Background="White" RenderTransformOrigin="1.496,0.519" Click="done_Click" />
+        <Button x:Name="show" Content="แสดง" HorizontalAlignment="Left" Height="31" Margin="644,33,0,0" VerticalAlignment="Top" Width="76" Background="White" FontFamily="JasmineUPC" FontSize="28" Click="show_Click" />
+
+    </Grid>
+</Window>

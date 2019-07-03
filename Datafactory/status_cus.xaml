@@ -1,0 +1,19 @@
+﻿<Page x:Class="Datafactory.status_cus"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Datafactory"
+      mc:Ignorable="d" 
+     d:DesignHeight="720" d:DesignWidth="920"
+      Title="id_emp" Width="920" Height="720" Background="LightGray" >
+
+    <Grid>
+        <TextBox x:Name="txtsearch" HorizontalAlignment="Left" Height="33" Margin="63,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="563" FontFamily="JasmineUPC" FontSize="30"/>
+        <Button x:Name="search" Content="ค้นหา" HorizontalAlignment="Left" Height="42" Margin="639,101,0,0" VerticalAlignment="Top" Width="106" FontFamily="JasmineUPC" FontSize="28" Background="White" RenderTransformOrigin="1.496,0.519" Click="search_Click" />
+        <DataGrid x:Name="cusG" HorizontalAlignment="Left" Height="488" Margin="63,178,0,0" VerticalAlignment="Top" Width="793" FontFamily="JasmineUPC" FontSize="28"/>
+        <Label x:Name="head" Content="ค้นหาด้วยสถานะ" HorizontalAlignment="Left" Height="61" Margin="10,10,0,0" VerticalAlignment="Top" Width="265" FontSize="36" FontFamily="JasmineUPC" FontWeight="Bold"/>
+        <Button x:Name="all" Content="ทั้งหมด" HorizontalAlignment="Left" Height="42" Margin="750,101,0,0" VerticalAlignment="Top" Width="106" Background="White" FontSize="28" FontFamily="JasmineUPC" Click="all_Click" />
+
+    </Grid>
+</Page>
